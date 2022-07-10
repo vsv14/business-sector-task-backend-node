@@ -1,0 +1,26 @@
+{
+  "controllerPathGlobs": ["src/controllers/*.ts"],
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+
+
+  "spec": {
+    
+    "outputDirectory": "static",
+    "specVersion": 3,
+
+    "spec":{
+      "basePath":"/api",
+      "servers": [
+        {
+          "url": "http://localhost:5000/api",
+          "description": "Local development"
+        },
+        {
+          "url": "http://product/api",
+          "description": "Prod development"
+        }
+      ]
+    }
+  }
+}
